@@ -17,7 +17,7 @@ if (isset($_REQUEST["id"])){
 
     //hacemos un query para obtener el registro con el id seleccionado, que es el que se quiere editar
     //Buscamos el nombre del archivo en la BD que hay que sustituir
-    $sql = "select * from georgia_directorio where idDirectorio =".$id;
+    $sql = "select * from juanf_directorio where idDirectorio =".$id;
     $rs = ejecutar($sql);
     
      //Como es un solo registro el que se encuentra, no hace falta ejecutar el lazo while para obtener la información guardada en el recordset
